@@ -16,10 +16,16 @@ const styles = StyleSheet.create({
 });
 
 export default class App extends Component {
+  state = {
+    message: 'Welcome to React Native!',
+  };
+
   render() {
+    const { message } = this.state;
+
     return (
       <View style={styles.container}>
-        <Welcome />
+        <Welcome title={message} />
       </View>
     );
   }
