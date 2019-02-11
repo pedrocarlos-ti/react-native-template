@@ -16,10 +16,6 @@ const styles = StyleSheet.create({
 });
 
 export default class App extends Component {
-  state = {
-    count: 0,
-  };
-
   render() {
     return (
       <View style={styles.container}>
